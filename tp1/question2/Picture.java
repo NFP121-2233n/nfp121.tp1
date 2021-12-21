@@ -50,9 +50,16 @@ public class Picture {
         roof.makeVisible();
 
         sun = new Circle();
-        sun.changeColor("yellow");
+        sun.changeColor("blue");
         sun.moveHorizontal(180);
         sun.moveVertical(-10);
+        sun.changeSize(60);
+        sun.makeVisible();
+    
+         sun = new Circle();
+        sun.changeColor("yellow");
+        sun.moveHorizontal(130);
+        sun.moveVertical(-50);
         sun.changeSize(60);
         sun.makeVisible();
     }
@@ -82,5 +89,25 @@ public class Picture {
             sun.changeColor("yellow");
         }
     }
+     public void terreFixeM() {
+        int distance=80;
+        
+        if (terreFixe == true) { 
+            sun.slowMoveVertical(-250);
+            
+        }
+        terreFixe=false;
+        }
+        else{
+        sun.slowMoveVertical(250);
 
+           
+            
+        }
+    }
+    
+    
+
+
+    
 }
